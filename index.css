@@ -17,9 +17,23 @@ h1 {
 	font-size: 72px;
 	left: 0;
 	right: 0;
-	top: -40px;
+	top: -60px;
 	position: absolute;
 	text-align: center;
+	color: #fcfdfe;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#star {
+	font-family: 'Oswald', sans-serif;
+	font-size: 42px;
+	left: 0;
+	right: 0;
+	top: -60px;
+	position: relative;
 	color: #fcfdfe;
 	-webkit-user-select: none; /* Chrome/Safari */     
 	-moz-user-select: none; /* Firefox */
@@ -32,7 +46,7 @@ h1 {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 20%;
+	top: 100px;
 	width: 650px;
 	height: 520px;
 	margin: auto;
@@ -301,4 +315,15 @@ h1 {
 
 .numDif:active {
 	background-color: #383e3f;
+}
+
+#bottomtext {
+	left: 0;
+	right: 0;
+	position: absolute;
+	bottom: 0;
+	font-size: 15px;
+	text-align: center;
+	color: #fcfdfe;
+	font-family: 'Oswald', sans-serif;
 }
