@@ -2,7 +2,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>		
 		<meta charset="utf-8"/>	
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
@@ -15,15 +14,18 @@
   	</head>
 	
 	<body>
+		<!--Header of the page-->
 		<h1>Press Buttons. Get Answers.</h1>
 		
+		<!--Division for all of the calculator's content-->
 		<div id="calculator">
-			<!--Header of the Page-->
+		
+			<!--Top of calculator, where numbers pressed and answers show up-->
 			<div id="answers">
 				<p id='output'>0</p>
 			</div>
 			
-			<!--Left Column-->
+			<!--Left Column (It starts from the bottom left "botl" and goes up from there)-->
 			<div class="but" id="botl">
 				<input type="button" class="num" id="a" onclick="changeTop(this.id)" value="+-" />
 			</div>
@@ -41,7 +43,7 @@
 			</div>
 		
 		
-			<!--Left Middle Column-->
+			<!--Left Middle Column (Also starts from the bottom, and goes up)-->
 			<div class="but" id="sec">
 				<input type="button" class="num" id="f" onclick="changeTop(this.id)" value="0" />
 			</div>
@@ -59,7 +61,7 @@
 			</div>			
 		
 		
-			<!--Right Middle Column-->
+			<!--Right Middle Column (Also bottom up)-->
 			<div class="but" id="thi">
 				<input type="button" class="num" id="k" onclick="changeTop(this.id)" value="." />
 			</div>
@@ -77,7 +79,7 @@
 			</div>				
 
 			
-			<!--Right Column-->
+			<!--Right Column (Bottom up)-->
 			<div class="but" id="fou">
 				<input type="button" class="num" id="equ" onclick="changeTop(this.id)" value="=" />
 			</div>
@@ -88,7 +90,7 @@
 				<input type="button" class="num" id="r" onclick="changeTop(this.id)" value="-" />
 			</div>
 			<div class="but" id="foufi">
-				<input type="button" class="numMult" id="s" onclick="changeTop(this.id)" value="*" />
+				<input type="button" class="num" id="s" onclick="changeTop(this.id)" value="*" />
 			</div>				
 			<div class="but" id="foubfi">
 				<input type="button" class="num" id="t" onclick="changeTop(this.id)" value="/" />
