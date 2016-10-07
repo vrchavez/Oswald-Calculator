@@ -1,3 +1,4 @@
+/*Styles Page generally, as far as height, background-color, etc*/
 body {
 	height: auto;
 	width: 100%;
@@ -5,11 +6,12 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #2a3132;
+	background-color: #324851;
 	overflow: visible;
 	overflow-x: hidden;
 }
 
+/*Header*/
 h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 72px;
@@ -19,8 +21,13 @@ h1 {
 	position: absolute;
 	text-align: center;
 	color: #fcfdfe;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
+/*Div for calculator*/
 #calculator {
 	position: absolute;
 	left: 0;
@@ -30,9 +37,10 @@ h1 {
 	height: 520px;
 	margin: auto;
 	text-align: center;
-	background-color: #8d230f;
+	background-color: #805A3B;
 }
 
+/*Top bar of calculator where answers and numbers pressed show up*/
 #answers {
 	position: absolute;
 	top: 10px;
@@ -40,8 +48,13 @@ h1 {
 	right: 10px;
 	height: 150px;
 	background-color: #2a3132;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
+/*Actual text of #answers div*/
 #output {
 	position: absolute;
 	right: 10px;
@@ -51,6 +64,7 @@ h1 {
 	color: #fcfdfe;
 }
 
+/*From here to #foubfi, we style the div and text for buttons on calculator*/
 #botl {
 	position: absolute;
 	left: 10px;
@@ -246,23 +260,18 @@ h1 {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.numMult {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 10px;
-	width: 100%;
-	height: 60px;
-	text-align: center;
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	color: #fcfdfe;
-	background-color: transparent;
-	outline: none;
-	border: none;
-	cursor: pointer;
+.num:hover {
+	background-color: #1d2223;
+}
+
+.num:active {
+	background-color: #383e3f;
 }
 
 .numDif {
@@ -280,4 +289,16 @@ h1 {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */     
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.numDif:hover {
+	background-color: #1d2223;
+}
+
+.numDif:active {
+	background-color: #383e3f;
 }
